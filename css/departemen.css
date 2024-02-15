@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #1d7cf2;
+    overflow-x: hidden;
+}
+
+.section-1{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent;
+}
+header .nav-left{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+header .nav-left h2{
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: white;
+}
+header .nav-right img{
+    margin: 0 5px;
+}
+
+
+.section-2{
+    padding: 50px;
+}
+.section-2 h1{
+    text-align: center;
+    font-family: 'coiny';
+    color: white;
+    margin-bottom: 100px;
+}
+.section-2 .departemen{
+    display: flex;
+    justify-content: space-between;
+    margin: 130px 0;
+    padding: 0 100px 0 50px;
+}
+.section-2 .departemen .foto{
+    position: relative;
+}
+/* .section-2 .departemen .foto .psd{
+    width: 250px;
+} */
+.section-2 .departemen .foto .bgpsd{
+    width: 370px;
+    position: absolute; 
+    left: -40px; 
+    z-index: -1; 
+    top: -100px;
+}
+.section-2 .departemen .desk{
+    color: white;
+    margin:20px 80px;
+    align-items: center;
+    text-align: justify;
+}
+.section-2 .departemen .desk h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.section-2 .departemen .desk .even{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: end;
+}
+
+.section-5{
+    position: relative;
+    margin-top: 200px;
+}
+.footer{
+    display: flex; 
+    position: absolute; 
+    bottom: 50px; 
+    justify-content: space-around; 
+    width: 100%;
+}
+.footer .footer-tittle .ppp{
+    width: 40px;
+}
+.footer .footer-tittle .himacontact{
+    width: 70px;
+}
+
+.media{
+    display: none;
+}
+.togle{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+/* @media screen and (max-width: 900px) {
+    main{
+        display: none;
+    }
+    .media{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        background-color: white;
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+} */
+
+@media screen and (max-width: 700px) {
+       .section-1 header .nav-right{
+        display: none;
+       } 
+       .section-1 header .nav-left img{
+        width: 40px;
+        }
+        .section-1 header .nav-left h2{
+            font-size: 10px;
+        }
+        .section-1 .togle{
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            width: 30px;
+            cursor: pointer;
+        }
+        .section-1 header .togle span{
+            height: 5px;
+            margin: 3px 0;
+            border-radius: 2px;
+            background-color: rgb(168, 168, 168);
+        }
+        .active-menu{
+            display: block;
+        }
+        .section-1 header .menu{
+            z-index: 0;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+        .section-1 header .menu .link{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .section-1 header .menu .link a{
+            text-decoration: none;
+            width: 90%;
+            color: rgb(0, 38, 255);
+            /* margin: 3px 0; */
+            padding: 3px;
+            font-weight: 500;
+        }
+        .section-1 header .menu .link a:hover{
+            background-color: rgb(72, 145, 255);
+            color: white;
+        }
+        .section-1 header .menu .medsos{
+            display: flex;
+            justify-content: space-around;
+    
+        }
+        .section-1 header .menu .medsos a{
+            text-decoration: none;
+            align-items: center;
+            color: black;
+        }
+        .section-1 header .menu .medsos a:hover{
+            color: blue;
+            font-weight: bold;
+        }
+        .section-1{
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .section-2{
+            margin: 50px 0;
+            padding: 0 10px;
+        }
+        .section-2 h1{
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        .section-2 .departemen:nth-child(odd){
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+        .section-2 .departemen{
+            margin: 10px;
+            padding: 10px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .section-2 .departemen .foto{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .section-2 .departemen .foto:nth-child(odd){
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .section-2 .departemen .foto .psd{
+            width: 150px;
+            border-radius: 30px;
+        }
+        .section-2 .departemen .foto .psd:nth-child(odd){
+            width: 250px;
+            border-radius: 30px;
+        }
+        .section-2 .departemen .foto .bgpsd{
+            width: 170px;
+            z-index: -1; 
+            position: absolute;
+            top: 10%;
+            left: 25%;
+
+        }
+        .section-2 .departemen .desk{
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        .section-2 .departemen .desk h3{
+            font-size: 13px;
+            text-align: center;
+        }
+        .section-2 .departemen .desk:nth-child(odd) h3{
+            font-size: 13px;
+            text-align: center;
+        }
+        .section-2 .departemen .desk p{
+            font-size: 12px;
+        }
+
+        .section-5 .footer .footer-tittle .ppp{
+            width: 20px;
+        }
+        .section-5 .footer .footer-tittle .himacontact{
+            width: 30px;
+        }
+        .footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .footer .footer-tittle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .footer .footer-tittle h6{
+            font-size: 10px;
+            font-weight: normal;
+            width: 100px;
+        }
+}
+
+
