@@ -52,7 +52,7 @@
 .modal-confirm .icon-box i {
 	font-size: 56px;
 	position: relative;
-	/* top: 4px; */
+	top: 4px;
 }
 .modal-confirm.modal-dialog {
 	margin-top: 80px;
