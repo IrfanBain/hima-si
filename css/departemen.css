@@ -81,23 +81,7 @@ header .nav-right img{
     text-align: end;
 }
 
-.section-5{
-    position: relative;
-    margin-top: 200px;
-}
-.footer{
-    display: flex; 
-    position: absolute; 
-    bottom: 50px; 
-    justify-content: space-around; 
-    width: 100%;
-}
-.footer .footer-tittle .ppp{
-    width: 40px;
-}
-.footer .footer-tittle .himacontact{
-    width: 70px;
-}
+
 
 .media{
     display: none;
@@ -256,30 +240,6 @@ header .nav-right img{
         }
         .section-2 .departemen .desk p{
             font-size: 12px;
-        }
-
-        .section-5 .footer .footer-tittle .ppp{
-            width: 20px;
-        }
-        .section-5 .footer .footer-tittle .himacontact{
-            width: 30px;
-        }
-        .footer{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-        .footer .footer-tittle{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
-        .footer .footer-tittle h6{
-            font-size: 10px;
-            font-weight: normal;
-            width: 100px;
         }
 }
 

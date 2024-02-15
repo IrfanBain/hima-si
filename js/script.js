@@ -30,3 +30,10 @@ const menu = document.getElementById('menu')
 togle.addEventListener('click', function(){
     menu.classList.toggle('active-menu')
 })
+
+// registrasi
+const daftar = document.getElementById('regis')
+
+daftar.addEventListener('click', function(){
+    alert('Mohon maaf, tidak ada pendaftaran untuk saat ini')
+})
